@@ -1,7 +1,3 @@
-<!-- variavel global php para apresntar o erro ao usr -->
-<?php
-session_start();
-?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -85,11 +81,11 @@ session_start();
 		<section id="formulario">
 			<div class="container">
 
-				<form method="POST" action="processa.php">
+				<form method="POST" action="trataEmail.php">
 					<div class="col-md-12">
 						<html>
     <div id="contato_form">
-      <form action="processa.php" name="form_contato" method="post" >
+      <form action="trataEmail.php" name="form_contato" method="post" >
       <p class="titulo">Formulário <small class="asteristico">*Campos Obrigatorios</small></p>
         <table align="center">
           <tr>
@@ -107,23 +103,20 @@ session_start();
           <tr>
             <td>Telefone:<sup class="asteristico">*</sup></td>
             <td>
-              <input type="text" name="telefone" maxlength="14" />
+              <input type="text" name="telefone" maxlength="18" />
             </td>
           </tr>
           <tr>
             <td>Opções:<sup class="asteristico">*</sup></td>
             <td>
-              <select name="Selecione" class="campo_input" class="asterisco">*
-                <option value="Opção 1"></option>
-                <option value="Opção 2">Pessoa Fisica</option>
-                <option value="Opção 3">Pessoa Juridica</option>
-              </select>
+            	<input type="radio" name="pessoa" value="fisica"> Pessoa Física
+            	<input type="radio" name="pessoa" value="juridica"> Pessoa Jurídica
             </td>
           </tr>
            <tr>
             <td>Mensagem:<sup class="asteristico">*</sup></td>
             <td>
-              <textarea name="msg" cols="16" rows="5"></textarea>
+            	<textarea  name="mensagem" id="mensagem" cols="45" rows="5"></textarea>
             </td>
           </tr>
           <tr align="right";>

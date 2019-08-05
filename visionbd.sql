@@ -22,6 +22,10 @@ SET time_zone = "+00:00";
 -- Database: `vision`
 --
 
+DROP DATABASE IF EXISTS vision;
+CREATE DATABASE IF NOT EXISTS vision;
+USE vision;
+
 -- --------------------------------------------------------
 
 --
