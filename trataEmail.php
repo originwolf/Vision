@@ -7,18 +7,18 @@
 	$email = $_POST['email'];
 	$telefone = $_POST['telefone'];
 	$pessoa = $_POST["pessoa"];
-	$mensagem = $_POST['mensagem'];
+	$texto = $_POST['texto'];
 
 	//3 – Agora definimos a  mensagem que vai ser enviado no e-mail
 	$mensagem = "Nome:  ".$nome;
-	$mensagem .= "<br>  E-mail: ".$email;
-	$mensagem .= "<br>  Telefone: ".$telefone;
-	$mensagem .= "<br>  Pessoa: ".$pessoa;
-	$mensagem .= "<br>  Mensagem: ".$mensagem;
+	$mensagem .= "E-mail: ".$email;
+	$mensagem .= "Telefone: ".$telefone;
+	$mensagem .= "Pessoa: ".$pessoa;
+	$mensagem .= "Mensagem: ".$texto;
 	 
 	//4 – agora inserimos as codificações corretas e  tudo mais.
 	$headers =  "Content-Type:text/plain; charset=UTF-8\r\n";
-	$headers .= "From:  Vision<contato@vision.com.br>zr\r\n"; 
+	$headers .= "From:  Vision<contato@vision.com.br>\r\n"; 
 	//Vai ser mostrado que  o email partiu deste email e seguido do nome
 	$headers .= "X-Sender:  <contato@vision.com.br>zr\n"; 
 	//email do servidor que enviou

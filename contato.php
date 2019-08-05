@@ -117,7 +117,7 @@
        						<tr>
 					            <td>Mensagem:<sup class="asteristico">*</sup></td>
 					            <td>
-					            	<textarea  name="mensagem" id="mensagem" cols="45" rows="5"></textarea>
+					            	<textarea  name="text" id="texto" cols="45" rows="5"></textarea>
 					            </td>
       						</tr>
 
