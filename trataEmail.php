@@ -9,7 +9,7 @@
 	$pessoa = $_POST["pessoa"];
 	$mensagem = $_POST['mensagem'];
 
-	 //3 – Agora definimos a  mensagem que vai ser enviado no e-mail
+	//3 – Agora definimos a  mensagem que vai ser enviado no e-mail
 	$mensagem = "Nome:  ".$nome;
 	$mensagem .= "<br>  E-mail: ".$email;
 	$mensagem .= "<br>  Telefone: ".$telefone;
@@ -25,9 +25,8 @@
 	$headers .= "X-Mailer: PHP  v".phpversion()."\r\n";
 	$headers .= "X-IP:  ".$_SERVER['REMOTE_ADDR']."\r\n";
 	$headers .= "Return-Path:  <contato@vision.com.br>\r\n"; 
-	//caso a msg //seja respondida vai para  este email.
+	//caso a msg seja respondida vai para  este email.
 	$headers .= "MIME-Version: 1.0\n";
 	 
 	mail($para, $nome, $mensagem, $headers);  //função que faz o envio do email.
 	header("Location: http://vision-gaby.000webhostapp.com");
-?>
