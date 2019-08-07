@@ -159,11 +159,10 @@
 		<!-- footer start -->
 		<footer id="footer" class="no-margin">
 			<div class="footer-top text-center">
-
 				<section class="row col-md-12">
 					<div class="col-lg-4 col-md-12 agradecimentos">
 						<h3>Vision VBA</h3>
-						<p>Consultoria & Sistemas VBA</p>
+						<p>   Consultoria & Sistemas VBA</p>
 					</div>
 
 					<div class="col-lg-4 col-md-12 contatos">
@@ -175,9 +174,7 @@
 					</div>
 
 					<div class="col-lg-4 col-md-12 loc">
-						<h4>Cambé - PR
-						<p>Obrigado por nos visitar!
-						</p></h4>
+						<h4>Cambé - PR</h4>
 						<a href="index.html"><div style="color: #fff" ><li class="fas fa-home mr-1" style="color:#fff" ></li>Voltar</div></a> 
 					</div>
 				</section>
