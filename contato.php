@@ -183,9 +183,9 @@
 				</section>
 			</div>
 
-			<div class="copyright no-margin">
+			<!-- <div class="copyright no-margin">
 				<p id="copyright" style="color:rgb(0, 100, 0)">Copyright 2019 - Gabrielly Venâncio</p> 
-			<a href="#top" class="fas fa-angle-double-up"></a>
+			<a href="#top" class="fas fa-angle-double-up"></a> -->
 
 			<!-- criando uma function para o icon fas fa-angle-double-up levar o usuário ao topo da pagina -->
 			<script>

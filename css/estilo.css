@@ -120,6 +120,9 @@ color: #fff;
 	text-align: justify;
 	line-height: 30px;
 }
+.SobreNos img{
+	max-width: 100%;
+}
 
 /*/*---------------------localização-------------------------------
 section#localizacao{
@@ -166,10 +169,6 @@ section#localizacao table.horario td{
 			}
 
 
-/*---------------------------section atrações------------------------*/
-section#atracoes{
-	margin-top: 20px;
-}
 /*--------------------------footer-------------------------------*/
 .footer-top{
 	background-color: #000;
