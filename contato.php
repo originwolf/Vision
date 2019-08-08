@@ -25,8 +25,8 @@
 		<header> 
 			<!--Início da barra de menu -->
 			<nav class="navbar navbar-expand-lg no-margin">
-				<a class="navbar-brand d-none d-lg-block pr-5" href="contato.php"><img id="logo" src="imagens/vision1.png" alt=""></a>
-				<a class="navbar-brand font-weight-bold d-lg-none d-block pl-2 logo" href="#background"></a>
+				<a class="navbar-brand d-none d-lg-block pr-5" href="index.html"><img id="logo" src="imagens/vision1.png" alt=""></a>
+				<a class="navbar-brand font-weight-bold d-lg-none d-block pl-2 logo" href="#background">Vision VBA</a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				</button>
 					<div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
@@ -36,13 +36,16 @@
 							<a class="nav-link" href="#SobreNos">Sobre Nós</a>
 						</li> -->
 						<li class="nav-item pr-3">
-							<a class="nav-link" href="#footer">Contato</a>
-						</li>
-						<li class="nav-item pr-3">
 							<a class="nav-link" href="index.html"><div style="" class="fas fa-home mr-1" style="" >Voltar</div></a>
 						</li>
 					</ul>
 				</div>
+				<div class="icon">
+		<div class="col-md-4 pr-5 text-right d-none d-md-block">
+			<!-- <a href="#"><span class="fab fa-facebook-f mr-4"></span></a> -->
+			<a href="https://api.whatsapp.com/send?phone=5543999069250&text=Oi%2C%20queria%20um%20or%C3%A7amento%20de%20um%20sistema%20em%20VBA!"><span class="fab fa-whatsapp mr-4"></span></a>
+			</div>
+			</div>
 			</nav>
 			<!-- section linha verde -->
 					<section id="linha">
