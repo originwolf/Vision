@@ -336,8 +336,8 @@ a[href="#top"]:hover{
 padding-top: 40px;
 }
 .container{
-	border: 1px solid rgb(0,100,0);
-	background-color: rgb(0,100,0);
+	border: 1px solid #fff;
+	background-color: #fff;
 	
 }
 footer{
