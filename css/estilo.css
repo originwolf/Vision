@@ -320,3 +320,30 @@ a[href="#top"]:hover{
   text-decoration: none;
   }
 */
+/*Formulario*/
+#p2{
+	padding-bottom: 50px;
+}
+ 
+.row img:hover{
+	width: 80%;
+
+}
+.row h5{
+	color: #2f4f4f;
+}
+#ideia{
+padding-top: 40px;
+}
+.container{
+	border: 1px solid rgb(0,100,0);
+	background-color: rgb(0,100,0);
+	
+}
+footer{
+	padding-top:20px;
+}
+a:link 
+{ 
+text-decoration:none; 
+}
