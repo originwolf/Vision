@@ -43,7 +43,7 @@
 						<ul class="navbar-nav mr-auto">
 
 							<li class="nav-item pr-3">
-								<a class="nav-link" href="contato.php">Fale Conosco</a>
+								<a class="nav-link" href="#formulario">Fale Conosco</a>
 							</li>
 
 							<li class="nav-item pr-3">
@@ -98,57 +98,50 @@
 				<div id="contato_form">
 
 						<form action="trataEmail.php" name="form_contato" method="post" >
-							<p class="titulo">Formulário <small class="asteristico">*Campos Obrigatorios</small></p>
-						<table align="center">
-
-    						<tr>
-					            <td>Nome:<sup class="asteristico">*</sup></td>
-						        <td>
-              						<input type="text" name="nome" maxlength="40" />
-            					</td>
-      						</tr>
-
-					        <tr>
-					        	<td>E-mail:<sup class="asteristico">*</sup></td>
-					            <td>
-					            	<input type="email" name="email" maxlength="30" />
-					            </td>
-					        </tr>
-
-      						<tr>
-        						<td>Telefone:<sup class="asteristico">*</sup></td>
-        						<td>
-          							<input type="text" name="telefone" maxlength="18" />
-        						</td>
-      						</tr>
-
-      						<tr>
-					            <td>Opções:<sup class="asteristico">*</sup></td>
-					            <td>
-					            	<input type="radio" name="pessoa" value="fisica"> Pessoa Física
+							<div class="col-md-12">
+						<p>Preencha os campos abaixo com seus dados, retornaremos o mais rápido possível.</p>
+					</div>
+						<div class="col-md-6">
+								<label >Nome:<sup class="asteristico">*</label>
+								<input type="text" name="nome" value="" class="form-control" id="nome"required>
+							
+							<!-- formatar mascaras -->
+							<script type="text/javascript">
+									$("#telefone").mask("(00)0000-0000");
+    								$("#celular").mask("(00) 00000-0000");
+    								$("#cpf").mask("000.000.000-00");
+    								
+    							</script>
+								<label>E-mail:</label>
+								<input type="text" name="email" value="" class="form-control" id="email"required>
+								<label>Telefone:</label>
+								<input type="text" name="telefone" value="" class="form-control telefone_ddd" id="telefone" placeholder="">
+							<label>Opções:</label>
+					               	<input type="radio" name="pessoa" value="fisica"> Pessoa Física
+					            	<p></p>
 					            	<input type="radio" name="pessoa" value="juridica"> Pessoa Jurídica
-					            </td>
+					            	<p></p>
+					        <label>Mensagem:<sup class="asteristico">*</label>
+							<textarea name="mensagem" cols="40" rows="5" class="form-control" id="mensagem" required placeholder=""></textarea>		
+							</div> 
+
+      						<div class="col-md-6 text-center mx-auto d-block" style="padding-top: 5px;">
+								<p>Verifique os campos assinalados</p>  
+								<p>* CAMPO OBRIGATÓRIO</p>
+								<button class="btn" type="submit" id="btn-enviar-contato" style="background-color: #2f4f4f; ">Enviar</button>
+        							<!-- <input type="reset" class="campo_submit" value="Limpar" />
+        							<input type="submit" class="campo_submit" value="Enviar" /> -->
+        						<?php
+									if(isset($_SESSION['msg'])){
+										echo $_SESSION['msg'];
+										unset($_SESSION['msg']);
+									}
+									?>
+							</div>
+        						<!-- <td colspan="2" align="right"><small class="asteristico">* Campos obrigatorios</small></td>
       						</tr>
 
-       						<tr>
-					            <td>Mensagem:<sup class="asteristico">*</sup></td>
-					            <td>
-					            	<textarea  name="text" id="texto" cols="45" rows="5"></textarea>
-					            </td>
-      						</tr>
-
-      						<tr align="right";>
-        						<td colspan="2">
-        							<input type="reset" class="campo_submit" value="Limpar" />
-        							<input type="submit" class="campo_submit" value="Enviar" />
-        						</td>
-      						</tr>
-
-      						<tr>
-        						<td colspan="2" align="right"><small class="asteristico">* Campos obrigatorios</small></td>
-      						</tr>
-
-						</table>
+						</table> -->
 					</form>
 				</div>
 			</div>
@@ -200,6 +193,7 @@
 			<div class="col-lg-4 col-md-12 loc">
 				<h4>Cambé - PR</h4>
 						<p>Obrigado por nos visitar!</p>
+						<a class="nav-link" href="index.html"><span class="fas fa-arrow-left">Voltar</span></a>
 
 			</div>
 		</section>
