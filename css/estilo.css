@@ -336,10 +336,11 @@ a[href="#top"]:hover{
 padding-top: 40px;
 }
 .container{
-	border: 1px solid #fff;
-	background-color: #fff;
+	border: 1px solid #000;
+	background-color: #000;
 	
 }
+
 footer{
 	padding-top:20px;
 }

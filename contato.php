@@ -18,6 +18,7 @@
 	<script src="js/popper.js"></script>
 	<script src="js/bootstrap.js"></script>
 
+	
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
 	<!-- Favicon -->
 	<link rel="shortcut icon" href="imagens/logo1.jpeg">
@@ -92,11 +93,10 @@
 		<img src="imagens\email.png" alt="" class=" img-fluid col-md-12 d-none d-block" style="width: 100%; padding: 0">
 
 		<!-- formulario -->
-			
-		<section id="formulario">
+			<section id="formulario"><!-- 
+		<div class="jumbotron jumbotron-fluid "> -->
 			<div class="container">
-				<div id="contato_form">
-
+				
 						<form action="trataEmail.php" name="form_contato" method="post" >
 							<div class="col-md-12">
 						<p>Preencha os campos abaixo com seus dados, retornaremos o mais rápido possível.</p>
@@ -145,6 +145,7 @@
 					</form>
 				</div>
 			</div>
+		</div>
 		</section>	
 
 		<a href="#top" class="fas fa-angle-double-up"></a>
